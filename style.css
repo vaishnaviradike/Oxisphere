@@ -1,0 +1,233 @@
+:root {
+    --bg: #FFF8E1;
+    --text: #1B1B1B;
+    --primary: #2E7D32;
+    --accent: #A5D6A7;
+    --card: #ffffff;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: all 0.4s ease;
+    line-height: 1.6;
+  }
+  
+  .dark-mode {
+    --bg: #121212;
+    --text: #e0e0e0;
+    --primary: #66bb6a;
+    --accent: #2E7D32;
+    --card: #1E1E1E;
+  }
+  
+  /* General Styling */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    vertical-align: middle;
+  }
+  
+  /* Header */
+  header {
+    background-color: rgb(2, 111, 2);
+    padding: 20px 0;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    display: inline-block;
+    font-size: 24px;
+    vertical-align: middle;
+  }
+
+  label{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+    vertical-align: middle;
+    padding-left: 20%;
+    gap: 20px;
+  }
+  
+  select {
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: #f0f8ff;
+    color: #333;
+    cursor: pointer;
+    
+  }
+
+  
+  nav {
+    float: right;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    gap: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    padding-top: 2%;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .toggle-theme {
+    background: none;
+    padding-top: 2%;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Hero */
+  .hero {
+    background: url('https://webassets.eurac.edu/31538/1633414846-adobestock216258246.jpeg?auto=format&crop=focalpoint&fit=crop&fm=jpg&h=1080&w=1920') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 12px;
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+  }
+  
+  .btn {
+    margin-top: 20px;
+    background-color: var(--accent);
+    color: var(--text);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  /* About */
+  .about {
+    padding: 60px 0;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .about-container img {
+    width: 300px;
+    border-radius: 12px;
+  }
+  
+  .about-text h3 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: green;
+  }
+  
+  .about-text .icons li {
+    margin-bottom: 8px;
+    list-style: none;
+  }
+  
+  /* Projects */
+  .center{
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: green;
+  }
+
+  .projects {
+    background-color: #f2fdf2;
+    padding: 60px 0;
+  }
+  
+  .dark-mode .projects {
+    background-color: #1a1a1a;
+  }
+  
+  .project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    flex: 1 1 calc(25% - 20px);
+    background: var(--card);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .card h4 {
+    margin: 10px 0 5px;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+  }
+  
+  /* Get Involved */
+  .get-involved {
+    padding: 60px 0;
+  }
+  
+  .involve-options {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: rgb(2, 111, 2);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+  }
+  
